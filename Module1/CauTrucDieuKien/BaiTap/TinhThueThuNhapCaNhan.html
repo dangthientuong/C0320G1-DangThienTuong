@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập cá nhân</title>
+</head>
+<body>
+<script>
+    let a = parseFloat(prompt("Nhập mức lương"));
+    if (a < 7000000) {
+        soluong = a - (a *(10 / 100));
+    }
+    else if (a > 7000000 && a < 15000000) {
+        soluong = a -  (a* (20 / 100));
+    }
+    else if (a > 15000000) {
+        soluong = a - (a*(30 / 100));
+    }
+    alert("Tổng số lương phải nhận : " + soluong);
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>May Tinh Don Gian</title>
+</head>
+<body>
+<input type="text" id="ketqua" style="width: 200px; height: 50px"><br>
+<button type="button" value="1" onclick="calculator(this.value)"> 1 </button>
+<button type="button" value="2" onclick="calculator(this.value)"> 2 </button>
+<button type="button" value="3" onclick="calculator(this.value)"> 3 </button>
+<button type="button" value="+" onclick="calculator(this.value)"> + </button>
+<br>
+<button type="button" value="4" onclick="calculator(this.value)"> 4 </button>
+<button type="button" value="5" onclick="calculator(this.value)"> 5 </button>
+<button type="button" value="6" onclick="calculator(this.value)"> 6 </button>
+<button type="button" value="-" onclick="calculator(this.value)"> - </button>
+<br>
+<button type="button" value="7" onclick="calculator(this.value)"> 7 </button>
+<button type="button" value="8" onclick="calculator(this.value)"> 8 </button>
+<button type="button" value="9" onclick="calculator(this.value)"> 9 </button>
+<button type="button" value="*" onclick="calculator(this.value)"> * </button>
+<br>
+<button type="button" value="C" onclick="calculator(this.value)"> C </button>
+<button type="button" value="0" onclick="calculator(this.value)"> 0 </button>
+<button type="button" value="=" onclick="calculator(this.value)"> = </button>
+<button type="button" value="/" onclick="calculator(this.value)"> / </button>
+<script>
+    function calculator(tinh) {
+        let ketqua = document.getElementById("ketqua");
+        if (tinh == "=") {
+            ketqua.value = eval(ketqua.value);
+        }
+        else if (tinh == "C") {
+            ketqua.value = "";
+        }
+        else {
+            ketqua.value = ketqua.value + tinh;
+        }
+
+
+    }
+</script>
+</body>
+</html>

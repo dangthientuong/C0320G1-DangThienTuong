@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giá điện</title>
+</head>
+<body>
+<script>
+    let kwh = parseInt(prompt("Nhập chỉ số tiêu thụ"));
+    if (kwh <= 100 && kwh > 0) {
+        tongtien = kwh * 1000;
+    }
+    else if (kwh > 100 && kwh <= 150) {
+        tongtien = (100 * 1000) + ((kwh - 100) * 2000);
+    }
+    else if (kwh > 150 && kwh <= 200) {
+        tongtien = (100 * 1000) + (50 * 2000) + ((kwh - 150) * 2500);
+    }
+    else if (kwh > 200) {
+        tongtien = (100 * 1000) + (50 * 2000) + (50 * 2500) + ((kwh - 200) * 3000);
+    }
+    alert("Tổng số tiền cần thanh toán : " + (tongtien + (tongtien * 10 / 100)) + "VNĐ")
+</script>
+</body>
+</html>

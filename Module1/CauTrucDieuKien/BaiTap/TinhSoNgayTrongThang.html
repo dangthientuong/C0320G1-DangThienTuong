@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tinh So Ngay Trong Thang</title>
+</head>
+<body>
+<input type="text" id="songay2">
+<button onclick="tinhsongay()"> Tinh So Ngay</button>
+<script>
+    function tinhsongay() {
+        let songay = document.getElementById("songay2");
+        switch (parseInt(songay.value)) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert("Thang co 31 ngay");
+                break;
+            case 4:
+            case 6:
+            case 9:
+            case 11:
+                alert("Thang co 30 ngay");
+                break;
+             case 2:
+                 let sonam = parseInt(prompt("Vui long nhap so nam"));
+                 if (sonam % 4 === 0 && sonam % 100 === 0 || sonam % 400 !== 0) {
+                     alert("Thang co 29 ngay");
+                 }
+                 else {
+                     alert("Thang co 28 ngay");
+                 }
+        }
+
+
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Cước Điện Thoại</title>
+</head>
+<body>
+<script>
+let phut = parseInt(prompt("Nhập vào số phút gọi"));
+let phut50 = 600;
+let phut150 = 400;
+let phut200 = 200;
+const phithuebao = 25000;
+if (phut <= 50 && phut > 0) {
+    thanhtien = (600 * phut) + 25000;
+}
+else if (phut > 50 && phut < 150) {
+    thanhtien = (600 * 50) + ((phut - 50) * 400) + 25000;
+}
+else if (phut > 150 && phut <= 200) {
+    thanhtien = (600*50) + (400*150) + ((phut - 150) * 200) + 25000;
+}
+alert("Thành tiền: " + thanhtien);
+</script>
+</body>
+</html>
