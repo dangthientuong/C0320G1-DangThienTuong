@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ung Dung Chuyen Doi Tien Te</title>
+</head>
+<body>
+<label> Amount: </label> <input type="text" id="amount">
+<label> From Currency: </label>
+<select id="fromCurrency">
+    <option value="VND"> VND </option>
+    <option value="USD"> USD </option>
+</select>
+<label> To Currency :</label>
+<select id="toCurrency">
+    <option value="USD"> USD </option>
+    <option value="VND"> VND </option>
+</select>
+<input type="text" id="ketqua">
+<button onclick="convert()"> Convert </button>
+<script>
+    function convert() {
+        let ketqua = 0;
+        let amount = document.getElementById("amount");
+        let fromCurrency = document.getElementById("fromCurrency").value;
+        let toCurrency = document.getElementById("toCurrency").value;
+        if (fromCurrency === "VND" && toCurrency === "USD") {
+            ketqua = amount.value / 23000;
+        } else if (fromCurrency === "USD" && toCurrency === "VND") {
+            ketqua = amount.value * 23000;
+        } else {
+            alert("Xin vui long chon loai tien");
+        }
+        document.getElementById("ketqua").value = ketqua;
+    }
+</script>
+</body>
+</html>
