@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let tong = 0;
+    let num = 0;
+    while (count < 30) {
+        if (num % 7 === 0) {
+            count++;
+            tong += num;
+        }
+        num++;
+    }
+    document.write('Tổng 30 số đâu tiên chia hết cho 7 :' + tong);
+</script>
+</body>
+</html>

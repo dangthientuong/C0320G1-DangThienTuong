@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" id="choi" onclick="playGame()">Play</button>
+<script>
+    function playGame() {
+        document.getElementById("choi");
+        prompt("Nhập vào số muốn chơi")
+        let begin = parseInt(prompt("Cho phép người dùng nhập số bắt đầu"));
+        let end = parseInt(prompt("Cho phép người dùng nhập số kết thúc"));
+        let random;
+        random = Math.floor(Math.random() * (end - begin + 1)) + begin;
+        let number = parseInt(prompt("Giá trị nhập vào của người dùng"));
+        let count = 1;
+        while (number != random && count <= 3) {
+            if (number < random) {
+                number = parseInt(prompt("Bé thua"));
+            } else if (number > random) {
+                number = parseInt(prompt("Bé lớn"));
+            }
+            count++;
+        }
+
+        if (count === 3) {
+            alert("Bạn đã thua");
+        }
+        else {
+            alert("Bạn đã thắng")
+        }
+    }
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let f1 = 1;
+    let f2 = 1;
+    let f3 = 0;
+    let a;
+    let b = 20;
+    for (a = 1 ; a <= 20 ;  a++) {
+        f3=f1+f2;
+        f1=f2;
+        f2=f3;
+        if (f3 % 5 === 0) {
+            document.write('Số trong dãy số Fibo chia hết cho 5 là : ' + f3);
+            break;
+        }
+
+    }
+</script>
+</body>
+</html>
