@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+Nhập số cần chuyển:<input id="nhapso">
+From: <select id="from">
+    <option value="Meters">Meters</option>
+    <option value="Feet">Feet</option>
+</select>
+To: <select id="to">
+    <option value="Feet">Feet</option>
+    <option value="Meters">Meters</option>
+</select>
+<input type="text" id="ketqua"><button onclick="tinh()">Kết Quả</button>
+<script>
+    function tinh() {
+        let nhapso = document.getElementById('nhapso');
+        let from = document.getElementById('from').value;
+        let to = document.getElementById('to').value;
+        let tinh = document.getElementById('ketqua');
+        if (from === 'Meters' && to === 'Feet') {
+            tinh.value = nhapso.value * 0.305;
+        }
+        else if (from === 'Feet' && to === 'Meters') {
+            tinh.value = nhapso.value * 3.279;
+        }
+        else {
+            alert('Xin vui lòng chọn lại đơn vị cần chuyển đổi');
+        }
+
+    }
+</script>
+
+</body>
+</html>
