@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhập vào mảng kí tự');
+    let array = a.split('');
+    let b = prompt('Nhập vào kí tự cần tìm');
+    function ketqua(b) {
+        let count = 0;
+        for (let i = 0 ; i < array.length ; i++) {
+            if (b == array[i]) {
+                count++;
+        }
+    }
+        return count;
+
+    }
+    document.write(ketqua(b));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhapso = [];
+    for (let i = 0; i < 3 ; i++) {
+        nhapso[i] = parseInt(prompt('Nhập vào số bất kỳ'));
+    }
+    let ketqua = kiemtra(nhapso);
+    function kiemtra(nhapso) {
+        let min = nhapso[0];
+        for (let j = 0; j < nhapso.length; j++) {
+            if (nhapso[j] < min) {
+                min = nhapso[j];
+            }
+        }
+        return min;
+    }
+    document.write('Số nhập ban đầu là : ' + nhapso + '<br>');
+    document.write('Số nhỏ nhất trong dãy số trên là : ' + kiemtra(nhapso));
+</script>
+</body>
+</html>

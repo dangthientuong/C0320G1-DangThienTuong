@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhập vào một chuỗi bất kỳ');
+    function kiemtra(a) {
+        if (isNaN(a)) {
+            return false;
+        }
+        else if (!isNaN(a)) {
+            return true;
+        }
+    }
+    document.write('Ký tự vừa nhập vào là : ' + kiemtra(a));
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập số thứ 1'));
+    let b = parseInt(prompt('Nhập số thứ 2'));
+    function tinh(a,b) {
+        let tinh;
+        if (a > b) {
+            tinh = 'Số thứ 1 lớn hơn số thứ 2';
+        }
+        else if (a <= b) {
+            tinh = 'Tổng của số thứ 1 và 2 : ' + parseInt(a + b);
+        }
+        return tinh;
+
+    }
+    document.write(tinh(a,b));
+</script>
+</body>
+</html>

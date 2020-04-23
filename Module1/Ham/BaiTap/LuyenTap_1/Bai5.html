@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhap = prompt('Nhập tên ngôi sao');
+    let tim = search(nhap);
+    function search() {
+        let ketqua = '';
+        let a = ['Polaris','Aldebaran','Deneb','Vega','Altair','Dubhe','Regulus'];
+        let b = ['Ursa Minor','Tarurus','Cygnus','Lyra','Aquila','Ursa Major','Leo'];
+        for (let i = 0 ; i < a.length ; i++) {
+            if (nhap === a[i]) {
+                ketqua = b[i];
+                break;
+            }
+        }
+        if (ketqua !== '') {
+            alert(nhap + ' thuộc chòm sao ' + ketqua);
+        }
+        else {
+            alert('Not Found');
+        }
+
+    }
+</script>
+</body>
+</html>

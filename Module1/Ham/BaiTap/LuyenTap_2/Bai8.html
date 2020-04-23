@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhập vào mảng số nguyên');
+    let b = a.split('');
+    let ketqua = kiemtra(a);
+    function kiemtra(a) {
+        let first = 0;
+        let last = b.length-1;
+        let temp;
+        while (first < last) {
+            temp = b[first];
+            b[first] = b[last];
+            b[last] = temp;
+            first++;
+            last--;
+        }
+        return b;
+    }
+    document.write('Mảng khi nhập ban đầu là : ' +  a + '<br>');
+    document.write('Mảng sau khi đảo là : ' + b + '<br>');
+    document.write('Mảng sắp xếp theo thứ tự từ bé đến lớn : ' + b.sort());
+</script>
+</body>
+</html>

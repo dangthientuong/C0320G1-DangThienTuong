@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhập vào một số bất kỳ');
+    let ketqua = kiemtra(a);
+    function kiemtra(a) {
+        if (a > 0) {
+            return a + ' là số nguyên dương';
+        }
+        else {
+            return a + ' không phải là số nguyên dương';
+        }
+
+    }
+    document.write('Số vừa nhập là : ' + kiemtra(a));
+</script>
+</body>
+</html>

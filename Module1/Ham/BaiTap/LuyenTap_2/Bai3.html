@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt('Nhập một số bất kỳ'));
+    let ketqua = tinhgiaithua(a);
+    function tinhgiaithua(a) {
+        let kq = a;
+        if (a === 0 && a === 1) {
+            return 1;
+        }
+        while (a > 1) {
+            a--;
+            kq *= a;
+        }
+        return kq;
+    }
+    document.write('Giai thừa của ' + a + ' là : ' + tinhgiaithua(a));
+</script>
+</body>
+</html>
