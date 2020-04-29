@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate email</title>
+</head>
+<body>
+<script>
+    kiemtra ();
+    function kiemtra() {
+        let a = prompt('Nhập vào địa chỉ email');
+        let Pattern = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (a.match(Pattern)) {
+            document.write('Địa chỉ Email hợp lệ');
+        }
+        else {
+            document.write('Địa chỉ Email không hợp lệ');
+        }
+
+    }
+</script>
+</body>
+</html>

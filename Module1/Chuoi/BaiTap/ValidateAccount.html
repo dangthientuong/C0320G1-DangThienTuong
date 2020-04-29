@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate account</title>
+</head>
+<body>
+<script>
+    kiemtra ();
+    function kiemtra() {
+        let a = prompt('Nhập tên account');
+        let Pattern = /^[_a-z0-9]{6,}$/;
+        if (a.match(Pattern)) {
+            document.write('Account hợp lệ');
+        }
+        else {
+            document.write('Account không hợp lệ');
+        }
+
+    }
+</script>
+</body>
+</html>
