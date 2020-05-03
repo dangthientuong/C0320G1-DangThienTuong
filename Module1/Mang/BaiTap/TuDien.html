@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Từ điển</title>
+</head>
+<body>
+<script>
+    let noidung = prompt("Nhập từ cần tra");
+    let arraytiengviet = ["anh" , "yeu" , "em"];
+    let arraytienganh = ["i" , "love" , "you"];
+    let ketqua = [];
+    for (let i = 0 ; i < 3 ; i++) {
+        if (noidung == arraytienganh[i]) {
+            alert(arraytiengviet[i]);
+            break;
+        }
+        else if (noidung == arraytiengviet[i]) {
+            alert(arraytienganh[i]);
+            break;
+        }
+        else {
+            ketqua = "Vui lòng nhập lại nội dung"
+        }
+
+    }
+    document.write(ketqua);
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    let array = [1 , 5 , 40 , 2 , 4 , 10 ];
+    let max = array[0];
+    let vitri = 0;
+    for (let i = 1 ; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+            vitri = i;
+        }
+    }
+    document.write('Giá trị lớn nhất là : ' + max + '<br>' + 'Vị trí trong mảng là : ' + vitri);
+</script>
+</body>
+</html>

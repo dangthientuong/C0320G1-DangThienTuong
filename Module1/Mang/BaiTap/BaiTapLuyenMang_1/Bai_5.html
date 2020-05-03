@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let a = [-1 , 3 , 5 , -7 , 22 , 9 , 11];
+    document.write('Các dãy số gồm : ' + a + '<br>');
+    let ketqua = 0;
+    let count = 0;
+    for (let i = 0 ; i < a.length ; i++) {
+        if (a[i] < 0) {
+            ketqua += a[i] + ' ';
+            count++;
+        }
+    }
+    document.write('Các dãy số bên trên bao gồm ' +count+ ' số âm đó là: ' + ketqua);
+</script>
+</body>
+</html>

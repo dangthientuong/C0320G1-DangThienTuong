@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+    let array = [1 , 5 , 6 ,8 ,11 , 24 , 15, 33, 45 , 2];
+    let ketqua = '';
+    let count = 0;
+    for (let i = 0 ; i < array.length ; i++) {
+        if (array[i] >= 10) {
+            ketqua += array[i] + ' ';
+            count++;
+        }
+    }
+    document.write('Có '+ count +'  số nguyên lớn hơn hoặc bằng 10:' + ketqua);
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành mảng  1</title>
+</head>
+<body>
+<label><h1>Sample Screen :</h1></label><br>
+<input type="text" id="textType">
+<button type="button" value="add" id="btnadd" onclick="Nhapvao()">Add</button>
+<button type="button" value="Display " id="btndisplay" onclick="Hienra()">Display</button>
+<div id="ketqua"></div>
+<script>
+    let x = 0;
+    let array = Array ();
+    function Nhapvao() {
+        array[x] = document.getElementById("textType").value;
+        alert("Hiên thị phần tử : " + array[x] + x);
+        x++;
+        document.getElementById("textType").value = "";
+
+    }
+    function Hienra() {
+        let e = "<hr/>";
+        for (let i = 0 ; i < array.length ; i++) {
+            e += "Hiển thị phần tử" + i + " = " + array[i] + "<br>";
+        }
+        document.getElementById("ketqua").innerHTML = e;
+
+    }
+</script>
+</body>
+</html>

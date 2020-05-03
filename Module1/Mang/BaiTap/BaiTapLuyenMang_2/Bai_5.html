@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body>
+<script>
+    let chuoi1 = prompt("Nhập vào chuỗi 1");
+    let chuoi2 = prompt("Nhập vào chuỗi 2");
+    let chieudai = ('');
+    if(chuoi1.length>chuoi2.length){
+        chieudai=chuoi1.length;
+    } else {
+        chieudai=chuoi2.length
+    }
+    let ketqua = true;
+    for (let i = 0 ; i < chieudai ; i++) {
+        ketqua = true;
+        if (chuoi1[i] != chuoi2[i]) {
+            ketqua = false;
+        }
+    }
+    if (ketqua) {
+        document.write('Hai chuỗi giống nhau');
+    }
+    else {
+        document.write('Hai chuỗi không giống nhau');
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sử dụng các hàm có sẵn trong mảng</title>
+</head>
+<body>
+<script>
+  /*  let myColor = ["Red", "Green", "White", "Black"];
+    document.write(myColor.join());
+   */
+
+ /* let array = prompt("Nhập số: ");
+  for (let i = 0 ; i < array.length ; i++) {
+      if (array[i-1] % 2 === 0 && array[i] % 2 === 0) {
+          document.write(" - " + array[i]);
+      }
+      else {
+          document.write(array[i]);
+      }
+  }
+
+  */
+    /*let noidung = prompt("Nhập vào chuỗi kí tự");
+    let array = noidung.split("");
+    let chuhoa = noidung.toUpperCase();
+    let arraychuhoa = chuhoa.split("");
+    let chuthuong = noidung.toLowerCase();
+    let arraychuthuong = chuthuong.split("");
+    let ketqua = [];
+    for (let i = 0 ; i < array.length ; i++) {
+        if (array[i] === arraychuhoa[i]) {
+            ketqua.push(chuthuong[i]);
+        }
+        else {
+            ketqua.push(chuhoa[i]);
+        }
+    }
+    document.write(ketqua.join(''));
+
+     */
+    let a = ["nam" , "nga" , "hien" , "tuan"];
+    function check(a) {
+        for (let i = 0; i < a.length ; i++) {
+            a[i] =  a[i].charAt(0).toLocaleUpperCase() + a[i].slice(1);
+        }
+        return a;
+
+    }
+    document.write(check(a));
+
+</script>
+</body>
+</html>

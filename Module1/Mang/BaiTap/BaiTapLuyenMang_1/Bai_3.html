@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let array = [ 50, 40 , 60, 30 , 20];
+    let max = array[0];
+    let vitri = 0;
+    let tb = 0;
+    for (let i = 0 ; i < array.length; i++) {
+        if (array[i] > max) {
+            max = array[i];
+        }
+        tb += array[i] / 5;
+    }
+    document.write('Giá trị lớn nhất là : ' + max + '<br>' + 'Giá trị trung bình là : ' + tb);
+</script>
+</body>
+</html>
